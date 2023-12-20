@@ -15,6 +15,17 @@ traversal. If multiple values are present at same index position, then the value
 to that index position to form a Linked List.
 """
 
+sample = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+mid = len(sample) // 2  # // will round, useful for midpoint
+left = sample[:mid]
+right = sample[mid + 1:]
+midrange = sample[1:8]
+print(mid)
+print(sample[mid])
+print(left)
+print(right)
+print(midrange)
+
 # List comprehension
 input_list = [1, 2, 3, 4, 4, 5, 6, 7, 7]
 list_using_comp = [var for var in input_list if var % 2 == 0]
